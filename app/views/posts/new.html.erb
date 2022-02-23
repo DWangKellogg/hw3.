@@ -4,18 +4,22 @@
     <%= form.label "title" %>
     <%= form.text_field "title" %>
   </p>
-  <p>
-    <%= form.label "posted_on" %>
-    <%= form.text_field "posted_on" %>
-  </p>
+
   <p>
     <%= form.label "description" %>
     <%= form.text_field "description" %>
   </p>
 
+  <p>
+    <%= form.hidden_field "posted_on" %>
+  </p>
+
+
    <p>
-    <%= form.label "place_id" %>
+    <%= form.hidden_field "place_id" %>
   </p>
 
   <%= form.submit %>
+
+<p><a href="/places">Back to Places</a></p>
 <% end %>
